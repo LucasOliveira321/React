@@ -15,7 +15,9 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView>
+    // Colocar flex: 1, faz com que os componentes fiquem dentro da tela
+    // Ocupando 100% do espaço da tela e não 200%, otimizando a aplicação
+    <SafeAreaView style={ { flex: 1}}>
       <StatusBar/>
       <Cesta {...mock}/>
     </SafeAreaView>
