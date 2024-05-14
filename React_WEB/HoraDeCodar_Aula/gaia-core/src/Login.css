@@ -1,0 +1,30 @@
+.loginContainer {
+    max-width: 23em;
+    margin: auto;
+    margin-top: 8em;
+    border: 1px solid #949494;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F4F1E9;
+    box-shadow: 0 0 10px #d0cfcf;
+  }
+  
+  .loginContainer h2 {
+    text-align: center;
+  }
+  
+  .loginContainer form {
+    margin-top: 1em;
+  }
+  
+  .loginContainer form label {
+    font-weight: bold;
+  }
+  
+  .loginContainer form .formGroup {
+    margin-bottom: 1em;
+  }
+  
+  .loginContainer form button {
+    width: 100%;
+  }
