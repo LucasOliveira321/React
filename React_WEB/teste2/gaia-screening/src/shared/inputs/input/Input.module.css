@@ -1,0 +1,30 @@
+@import url('../../../main.css');
+
+.div_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.label_input{
+    font-size: 20px;
+    margin-left:9px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.input{
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    padding: 0px 50px 0px 20px;
+    border-radius: 5px;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--green);
+    border: 1px solid var(--green);
+}

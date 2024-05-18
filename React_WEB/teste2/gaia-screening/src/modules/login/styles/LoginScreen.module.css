@@ -1,0 +1,73 @@
+@import url('../../../main.css');
+
+body{
+    overflow: hidden; 
+}
+
+.background_image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-color: var(--beige);
+    z-index: -1;
+}
+
+.img_logo{
+    max-width: 350px;
+}
+
+.container_login_screen{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 54px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.container_login{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: var(--beige);
+    width: 100%;
+    height: 100vh;
+    max-width: 646px;
+    padding: 22px;
+    
+}
+
+.small{
+    margin-top: 1em;
+}
+
+.div_logo{
+    width: 100%;
+    max-width: 498px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1600px){
+    .container_login{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 445px){
+    .img_logo{
+        width: 350px;
+    }
+    .container_login{
+        padding: 0px;
+    }
+}
