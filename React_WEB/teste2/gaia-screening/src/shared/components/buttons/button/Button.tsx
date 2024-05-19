@@ -5,6 +5,7 @@ interface ButtonProps{
     type: "button"|"submit"|"reset";
     id: string;
     onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+    loading: boolean;
 }
 
 const Button = ({text, type, id, onClick}: ButtonProps) => {

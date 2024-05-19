@@ -1,4 +1,4 @@
-@import url('../../../main.css');
+@import url('../../../../main.css');
 
 .div_input{
     display: flex;
@@ -9,7 +9,7 @@
     font-size: 20px;
     margin-left:9px;
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
 .input{

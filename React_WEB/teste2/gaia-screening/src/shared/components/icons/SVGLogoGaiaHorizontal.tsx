@@ -3,7 +3,7 @@
 const SVGLogoGaiaHorizontal = () => {
     return (
         <svg 
-            width={350}
+            width={300}
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 407.68 136.95"
             >
