@@ -48,7 +48,15 @@ body{
     height: 100vh;
     max-width: 646px;
     padding: 22px;
-    
+}
+
+.alert_container {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
 }
 
 .small{
