@@ -1,6 +1,8 @@
 import { createContext, useContext, useState } from "react";
 import { setAuthorizationToken } from "../functions/connection/auth";
 
+
+
 interface GlobalData{
     accessToken?: string;
 }

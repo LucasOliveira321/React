@@ -1,3 +1,3 @@
 export interface UserType {
-    accessToken: string;
+    access_token: string;
 }
