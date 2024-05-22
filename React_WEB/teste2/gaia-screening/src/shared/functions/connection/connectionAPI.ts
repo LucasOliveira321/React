@@ -15,9 +15,9 @@ export default class ConnectionAPI {
 
         switch (method) {
             case(MethodsEnum.GET):
-                return (await axios.get<T>(url)).data;
+                return (await axios.get<T>(url, config)).data;
             case(MethodsEnum.DELETE):
-                return (await axios.delete<T>(url)).data;
+                return (await axios.delete<T>(url, config)).data;
             case(MethodsEnum.POST):
                 return (await axios.post<T>(url, body, config)).data;
             case(MethodsEnum.PATCH):

@@ -1,8 +1,6 @@
 import '../styles/LoginScreen.module.css';
 import { useState } from 'react';
 import { useRequests } from '../../../shared/hooks/useRequests';
-import { UserType } from '../types/UserType';
-import { useGlobalContext } from '../../../shared/hooks/useGlobalContext';
 import Button from '../../../shared/components/buttons/button/Button';
 import Input from '../../../shared/components/inputs/input/Input';
 import styles from '../styles/LoginScreen.module.css';
@@ -10,7 +8,6 @@ import SVGLogoGaiaHorizontal from '../../../shared/components/icons/SVGLogoGaiaH
 
 
 const LoginScreen = () => {
-    const { setAccessToken } = useGlobalContext();
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
 
@@ -23,13 +20,12 @@ const LoginScreen = () => {
 
     //  POST REQUEST
     const { authRequest } = useRequests();
-    const handleLogin = async () => {
-        const user = await authRequest<UserType>({
+
+    const handleLogin = () => {
+        authRequest({
             email: email,
             password: password
         });
-        setAccessToken(user?.access_token || '');
-        console.log(!user);
     }
     
 
